@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CED281F61D592B980014733D /* SwiftyStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = CED281F51D592B980014733D /* SwiftyStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CED281FE1D592BC80014733D /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED281FD1D592BC80014733D /* Storyboard.swift */; };
+		CED282001D5930FA0014733D /* UIStoryboardMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED281FF1D5930FA0014733D /* UIStoryboardMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		CED281F51D592B980014733D /* SwiftyStoryboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyStoryboard.h; sourceTree = "<group>"; };
 		CED281F71D592B980014733D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CED281FD1D592BC80014733D /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		CED281FF1D5930FA0014733D /* UIStoryboardMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 			children = (
 				CED281F51D592B980014733D /* SwiftyStoryboard.h */,
 				CED281FD1D592BC80014733D /* Storyboard.swift */,
+				CED281FF1D5930FA0014733D /* UIStoryboardMethods.swift */,
 				CED281F71D592B980014733D /* Info.plist */,
 			);
 			path = SwiftyStoryboard;
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED281FE1D592BC80014733D /* Storyboard.swift in Sources */,
+				CED282001D5930FA0014733D /* UIStoryboardMethods.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +289,7 @@
 				CED281FC1D592B980014733D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
