@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CED281F61D592B980014733D /* SwiftyStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = CED281F51D592B980014733D /* SwiftyStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CED281FE1D592BC80014733D /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED281FD1D592BC80014733D /* Storyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CED281F21D592B980014733D /* SwiftyStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED281F51D592B980014733D /* SwiftyStoryboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyStoryboard.h; sourceTree = "<group>"; };
 		CED281F71D592B980014733D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CED281FD1D592BC80014733D /* Storyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				CED281F51D592B980014733D /* SwiftyStoryboard.h */,
+				CED281FD1D592BC80014733D /* Storyboard.swift */,
 				CED281F71D592B980014733D /* Info.plist */,
 			);
 			path = SwiftyStoryboard;
@@ -130,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CED281FE1D592BC80014733D /* Storyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +234,7 @@
 		CED281FB1D592B980014733D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -240,12 +245,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.violentoctopus.SwiftyStoryboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		CED281FC1D592B980014733D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
