@@ -8,13 +8,13 @@
 
 import UIKit
 
-extension Storyboard {
+public extension Storyboard {
     static var storyboard: UIStoryboard {
         return UIStoryboard(name: Self.fileName, bundle: nil)
     }
 }
 
-extension Storyboard where ControllerId.RawValue == String {
+public extension Storyboard where ControllerId.RawValue == String {
     static func instantiateViewController(with identifier: ControllerId) -> UIViewController {
         return Self.storyboard.instantiateViewControllerWithIdentifier(identifier.rawValue)
     }
