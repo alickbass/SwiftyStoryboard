@@ -6,7 +6,7 @@ Take a look at the code below:
 
 ```swift
 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-let controller = storyboard.instantiateViewControllerWithIdentifier("Settings") as? SettingsViewController
+let controller = storyboard.instantiateViewControllerWithIdentifier("Settings") as! SettingsViewController
 ```
 Such code has 2 disadvantages:
 
@@ -31,7 +31,7 @@ struct Main: Storyboard {
 and now we can instantiate out controller with specific identifier like this:
 
 ```swift
-let controller = Main.instantiateViewController(with: .Settings, type: SettingsViewController.self)
+let controller: SettingsViewController = Main.instantiateViewController(with: .Settings)
 ```
 Such approach allows us to distinguish different storyboards with different controller identifiers 
 and give more information to compiler about our storyboards.
