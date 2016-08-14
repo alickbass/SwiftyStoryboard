@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE1ADE171D60B7F0002B0AF7 /* SwiftyStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = CED281F51D592B980014733D /* SwiftyStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE1ADE181D60B802002B0AF7 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED281FD1D592BC80014733D /* Storyboard.swift */; };
+		CE1ADE1C1D60BB18002B0AF7 /* NSStoryboardMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1ADE1B1D60BB18002B0AF7 /* NSStoryboardMethods.swift */; };
 		CED281F61D592B980014733D /* SwiftyStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = CED281F51D592B980014733D /* SwiftyStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CED281FE1D592BC80014733D /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED281FD1D592BC80014733D /* Storyboard.swift */; };
 		CED282001D5930FA0014733D /* UIStoryboardMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED281FF1D5930FA0014733D /* UIStoryboardMethods.swift */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		CE1ADE001D60B649002B0AF7 /* SwiftyStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1ADE1B1D60BB18002B0AF7 /* NSStoryboardMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSStoryboardMethods.swift; sourceTree = "<group>"; };
 		CED281F21D592B980014733D /* SwiftyStoryboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyStoryboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED281F51D592B980014733D /* SwiftyStoryboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyStoryboard.h; sourceTree = "<group>"; };
 		CED281F71D592B980014733D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				CED281F51D592B980014733D /* SwiftyStoryboard.h */,
 				CED281FD1D592BC80014733D /* Storyboard.swift */,
 				CED281FF1D5930FA0014733D /* UIStoryboardMethods.swift */,
+				CE1ADE1B1D60BB18002B0AF7 /* NSStoryboardMethods.swift */,
 				CED281F71D592B980014733D /* Info.plist */,
 			);
 			path = SwiftyStoryboard;
@@ -193,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1ADE1C1D60BB18002B0AF7 /* NSStoryboardMethods.swift in Sources */,
 				CE1ADE181D60B802002B0AF7 /* Storyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
