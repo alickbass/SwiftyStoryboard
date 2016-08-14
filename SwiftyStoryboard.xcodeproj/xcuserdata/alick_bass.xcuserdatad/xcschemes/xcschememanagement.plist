@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>SwiftyStoryboard-tvOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>SwiftyStoryboard.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>CE1ADE081D60B649002B0AF7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE65B02D1D60D6AB008A01C9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
