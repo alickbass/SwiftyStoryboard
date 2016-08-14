@@ -19,7 +19,13 @@ public extension Storyboard where ControllerId.RawValue == String {
         guard let controller = Self.storyboard.instantiateControllerWithIdentifier(identifier.rawValue) as? T else {
             fatalError("Could not instantiate view controller of given type")
         }
-        
+        return controller
+    }
+    
+    public static func instantiateWindowController<T: NSWindowController>(with identifier: ControllerId) -> T {
+        guard let controller = Self.storyboard.instantiateControllerWithIdentifier(identifier.rawValue) as? T else {
+            fatalError("Could not instantiate window controller of given type")
+        }
         return controller
     }
     
