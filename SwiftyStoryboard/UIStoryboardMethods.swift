@@ -15,11 +15,17 @@ public extension Storyboard {
 }
 
 public extension Storyboard where ControllerId.RawValue == String {
-    public static func instantiateViewController<T: UIViewController>(with identifier: ControllerId, type: T.Type? = nil) -> T? {
-        return Self.storyboard.instantiateViewControllerWithIdentifier(identifier.rawValue) as? T
+    public static func instantiateViewController<T: UIViewController>(with identifier: ControllerId) -> T {
+        guard let controller = Self.storyboard.instantiateViewControllerWithIdentifier(identifier.rawValue) as? T else {
+            fatalError("Could not instantiate controller of given type")
+        }
+        return controller
     }
     
-    public static func instantiateInitialViewController<T: UIViewController>(type: T.Type? = nil) -> T? {
-        return Self.storyboard.instantiateInitialViewController() as? T
+    public static func instantiateInitialViewController<T: UIViewController>() -> T {
+        guard let controller = Self.storyboard.instantiateInitialViewController() as? T else {
+            fatalError("Could not instantiate initial controller of given type")
+        }
+        return controller
     }
 }
