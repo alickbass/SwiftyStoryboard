@@ -12,3 +12,9 @@ public protocol Storyboard {
     associatedtype ControllerId: RawRepresentable
     static var fileName: String { get }
 }
+
+public extension Storyboard {
+    public static var fileName: String {
+        return String(Self)
+    }
+}
