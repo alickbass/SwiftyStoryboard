@@ -22,8 +22,6 @@ We create a struct that conforms to `Storyboard` protocol like this one:
 
 ```swift
 struct Main: Storyboard {
-    static let fileName = "Main"
-    
     enum ControllerId: String {
         case Settings
     }
@@ -35,6 +33,10 @@ and now we can instantiate out controller with specific identifier like this:
 ```swift
 let controller: SettingsViewController = Main.instantiateViewController(with: .Settings)
 ```
+
 Such approach allows us to distinguish different storyboards with different controller identifiers 
 and give more information to compiler about our storyboards.
+
+
+SwiftyStoryboard by deafult take the the type name as the name of the storyboard file. For example, in this case it will take `Main.storyboard` as the name of the type is `Main`
 
