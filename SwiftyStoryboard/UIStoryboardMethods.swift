@@ -16,7 +16,7 @@ public extension Storyboard {
 
 public extension Storyboard where ControllerId.RawValue == String {
     public static func instantiateViewController<T: UIViewController>(with identifier: ControllerId) -> T {
-        guard let controller = Self.storyboard.instantiateViewControllerWithIdentifier(identifier.rawValue) as? T else {
+        guard let controller = Self.storyboard.instantiateViewController(withIdentifier: identifier.rawValue) as? T else {
             fatalError("Could not instantiate controller of given type")
         }
         return controller

@@ -15,6 +15,6 @@ public protocol Storyboard {
 
 public extension Storyboard {
     public static var fileName: String {
-        return String(Self)
+        return String(describing: Self.self)
     }
 }
