@@ -184,6 +184,7 @@
 					};
 					CE65B02D1D60D6AB008A01C9 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					CED281F11D592B980014733D = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -327,6 +328,7 @@
 				PRODUCT_NAME = SwiftyStoryboard;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
@@ -348,6 +350,7 @@
 				PRODUCT_NAME = SwiftyStoryboard;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
 			};
