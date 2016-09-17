@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -180,6 +180,7 @@
 				TargetAttributes = {
 					CE1ADDFF1D60B649002B0AF7 = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
 					};
 					CE65B02D1D60D6AB008A01C9 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -191,7 +192,7 @@
 				};
 			};
 			buildConfigurationList = CED281EC1D592B980014733D /* Build configuration list for PBXProject "SwiftyStoryboard" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -283,6 +284,7 @@
 				PRODUCT_NAME = SwiftyStoryboard;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -305,6 +307,7 @@
 				PRODUCT_NAME = SwiftyStoryboard;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
