@@ -8,13 +8,13 @@
 
 import Cocoa
 
-public extension Storyboard {
+public extension StoryboardType {
     static var storyboard: NSStoryboard {
         return NSStoryboard(name: Self.fileName, bundle: nil)
     }
 }
 
-public extension Storyboard where ControllerId.RawValue == String {
+public extension StoryboardType where ControllerId.RawValue == String {
     public static func instantiateViewController<T: NSViewController>(with identifier: ControllerId) -> T {
         guard let controller = Self.storyboard.instantiateController(withIdentifier: identifier.rawValue) as? T else {
             fatalError("Could not instantiate view controller of given type")

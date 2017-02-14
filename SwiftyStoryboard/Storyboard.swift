@@ -8,12 +8,12 @@
 
 import Foundation
 
-public protocol Storyboard {
+public protocol StoryboardType {
     associatedtype ControllerId: RawRepresentable
     static var fileName: String { get }
 }
 
-public extension Storyboard {
+public extension StoryboardType {
     public static var fileName: String {
         return String(describing: Self.self)
     }
