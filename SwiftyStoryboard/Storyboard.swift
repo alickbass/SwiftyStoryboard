@@ -11,10 +11,15 @@ import Foundation
 public protocol StoryboardType {
     associatedtype ControllerId: RawRepresentable
     static var fileName: String { get }
+    static var bundle: Bundle? { get }
 }
 
 public extension StoryboardType {
     public static var fileName: String {
         return String(describing: Self.self)
+    }
+    
+    public static var bundle: Bundle? {
+        return nil
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 
 public extension StoryboardType {
     static var storyboard: UIStoryboard {
-        return UIStoryboard(name: Self.fileName, bundle: nil)
+        return UIStoryboard(name: Self.fileName, bundle: Self.bundle)
     }
 }
 
