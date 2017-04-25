@@ -10,7 +10,7 @@ import Cocoa
 
 public extension StoryboardType {
     static var storyboard: NSStoryboard {
-        return NSStoryboard(name: Self.fileName, bundle: nil)
+        return NSStoryboard(name: Self.fileName, bundle: Self.bundle)
     }
 }
 
