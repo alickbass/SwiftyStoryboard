@@ -21,9 +21,9 @@ We want to get rid of that. `SwiftyStoryboard` allows to deal with both of there
 We create a struct that conforms to `Storyboard` protocol like this one:
 
 ```swift
-struct Main: Storyboard {
+struct Main: StoryboardType {
     enum ControllerId: String {
-        case Settings
+        case settings
     }
 }
 ```
@@ -31,7 +31,7 @@ struct Main: Storyboard {
 and now we can instantiate out controller with specific identifier like this:
 
 ```swift
-let controller: SettingsViewController = Main.instantiateViewController(with: .Settings)
+let controller: SettingsViewController = Main.instantiateViewController(with: .settings)
 ```
 
 Such approach allows us to distinguish different storyboards with different controller identifiers 
