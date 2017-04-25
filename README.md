@@ -3,7 +3,7 @@ A More Swifty way to use storyboards
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-##Motivation:
+## Motivation:
 Take a look at the code below:
 
 ```swift
@@ -17,7 +17,7 @@ Such code has 2 disadvantages:
   
 We want to get rid of that. `SwiftyStoryboard` allows to deal with both of there problems in one shot. 
 
-##Usage example
+## Usage example
 We create a struct that conforms to `Storyboard` protocol like this one:
 
 ```swift
